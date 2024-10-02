@@ -1,0 +1,315 @@
+/* selector + propiedad
+selector {corchete
+propiedad: valor
+corchete
+*/
+    *  {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 0%;
+        margin: 0%;
+        color: black;
+    }
+
+
+    main {
+        margin-top: 10px;
+        min-height: 100vh;
+
+    }
+    /*INDEX*/ 
+    h1  { 
+        color: white;
+        text-decoration: none ;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: #060c2a ;
+        border: 30px #060c2a solid;
+    }
+
+    ul { 
+        text-align:right;
+        background-color: #060c2a ;
+        border: 5px #060c2a solid;
+    }
+
+    a { 
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 2px;
+        word-spacing: 60px;
+        text-decoration: none;
+    }
+    a:hover {
+        color:rgb(153, 183, 232);
+    }
+
+.contenedor {
+    display: flex; 
+    width: 100%;
+}
+
+h2, h3 {
+    color: #fefefe;
+    text-align: center;
+    margin: 2%; 
+    padding: 3%; 
+}
+
+h2 {
+    font-size: 17px;
+    margin: 6%;
+    border: rgb(158, 12, 12);
+    background: rgb(172, 15, 15);
+}
+
+h3 {
+    font-size: 100%;
+    padding: 1.5%; 
+    border: rgb(8, 6, 6);
+    background: rgb(10, 10, 10);
+}
+
+/* Estilo para imágenes */
+img {
+    width: 45%;
+    margin-right: 1%;
+}
+.iva__img {
+    text-align: center;
+}
+
+/* Estilos para secciones */
+.iva, .vto {
+    background-color: #fcfcfcec;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 10%; 
+}
+
+.iva {
+    width: 80%;
+    border: #060c2a; 
+}
+
+.vto {
+    width: 70%;
+    padding-left: 5%;
+}
+
+/*TABLE VENCIMIENTOS*/
+    table {
+        padding: 0%;
+        margin-left: 0%;
+        width: 50%;
+    }
+
+    td {
+    border-right:0.5px solid#060c2a ;
+    border-left:0.5px solid#060c2a ;
+}
+
+    tr {
+        text-align: center;
+        font-size: 100%;
+}
+
+/*ESTILOS FOOTER*/
+footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #060c2a;
+    padding: 20px;
+    font-size: 1rem; 
+    font-weight: bold;
+    margin-top: auto; 
+}
+
+.footer__redes {
+    display: flex; /
+}
+.footer__redes img {
+    width: 35px; 
+    height: 35px; 
+}
+
+h5 , .footer__pya , .footer__copy {
+    flex-grow: 1; 
+    text-align: center; 
+    margin: 0; 
+    color: rgb(227, 225, 225); 
+}
+
+
+/* NOVEDADES CON GRID*/
+.gridnovedades {
+    display: grid;
+    text-align: center ;
+    margin-left: 2%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "iva1 blanqueo"
+    "prorroga iva2";
+}
+.blanqueo { 
+    grid-area: blanqueo;
+}
+.iva1 {
+    grid-area: iva1;
+}
+.prorroga {
+    grid-area: prorroga;
+}
+.iva2 {
+    grid-area: iva2;
+}
+
+/* Estilo para las imágenes */
+article img {
+    width: 40%; 
+    height: auto; 
+}
+/* Estilo para los párrafos */
+article p {
+    padding: 15px; 
+    color: #14122c; 
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+/* Efecto al pasar el mouse sobre los artículos */
+article:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* SERVICIOS*/
+.gridservicios {
+    display: grid;
+    text-decoration: none;
+    margin-left: 2%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "servexterno servinterno"
+    ;
+}
+.servexterno {
+    grid-area: servexterno;
+}
+.servinterno {
+    grid-area: servinterno;
+}
+
+/* FORMULARIO DE CONTACTO Y EL MAPA*/
+#form {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+
+.form__contacto {
+    margin-bottom: 20px;
+    flex-direction: column;
+    margin: auto; 
+    gap: 2%; 
+}
+/* Estilo de los encabezados */
+h4 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Estilos de los inputs y texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Efecto en el input y textarea al enfocar */
+input:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos del botón de envío */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Efecto en el botón de envío al pasar el ratón */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+} 
+
+.form__mapa {
+    width: 70%;
+    direction: center;
+    margin-top: 20px;
+}
+/*VENCIMIENTO CUADRO*/
+.vto__cuadro {
+    display: flex;
+}
+
+/* MEDIA PARA MOBIL*/
+@media screen and (max-width: 576px){
+    .gridnovedades {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "iva1"
+        "blanqueo"
+        "prorroga"
+        "iva2";
+}
+#form {
+    padding: 15px;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+input[type="submit"] {
+    padding: 10px;
+}
+
+#form__mapa {
+    height: 200px; /* Ajuste de altura en pantallas pequeñas */
+}
+
+.gridservicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: 
+    "servexterno"
+    "servinterno"
+    ;
+}
+}
